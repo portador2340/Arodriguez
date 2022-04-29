@@ -1,5 +1,6 @@
 package edu.ilp.Arodriguez.Controller;
 
+import edu.ilp.Arodriguez.entity.Estudiante;
 import edu.ilp.Arodriguez.entity.Persona;
 import edu.ilp.Arodriguez.service.IPersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,11 @@ public class Controlador {
     @GetMapping("/listarPersona")
     public List<Persona> lsitarPersona(){
         return this.personaService.listarPersona();
+    }
+
+    @GetMapping("/listarEstudiantePorCodigo")
+    public Estudiante buscarEstudianeByIdAndCodigo(@RequestParam String codigo) {
+        return this.personaService.buscarEstudianeByIdAndCodigo(codigo);
 
     }
 }
