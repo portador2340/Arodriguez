@@ -3,6 +3,7 @@ package edu.ilp.Arodriguez.service.Impl;
 import edu.ilp.Arodriguez.dao.IPersonaDao;
 import edu.ilp.Arodriguez.entity.Estudiante;
 import edu.ilp.Arodriguez.entity.Persona;
+import edu.ilp.Arodriguez.entity.Profesor;
 import edu.ilp.Arodriguez.service.IPersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -19,6 +20,11 @@ public class PersonaServiceImpl implements IPersonaService {
 
     @Override
     public Estudiante buscarEstudianeByIdAndCodigo(String codigo) {
+        return null;
+    }
+
+    @Override
+    public Profesor buscarProfesorByIdAndCodigo(String codigo) {
         return null;
     }
 
